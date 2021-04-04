@@ -38,7 +38,7 @@ superuser: true
 title: Da Kuang
 ---
 
-I am a second-year Ph.D. student in the Department of Computer and Information Science, University of Pennsylvania, advised by Professor [Junhyong Kim](https://kim.bio.upenn.edu/). My research interests center around single-cell genomics. I am currently working on robust transformation on scRNA-seq data to make the observations biological comparable. 
+I am a second-year Ph.D. student in the Department of Computer and Information Science, University of Pennsylvania, advised by Professor [Junhyong Kim](https://kim.bio.upenn.edu/). My research interests center around single-cell genomics. I am currently working on robust objective optimization in biology problems. 
 
 I am also working on a [reading list](https://publish.obsidian.md/single-cell-papers/README) about Single-cell genomics. This list aims to help computational background students like me get familiar with the field while keeping up with the trends.
 
