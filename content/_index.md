@@ -15,12 +15,12 @@ sections:
       color: black
       image:
         filename: color-1.jpg
-        filters:
-          brightness: 1
         parallax: false
         position: center
         size: cover
+        padding: 0,0,0,0
     css_class: dark
+    
 # - block: markdown
 #   content:
 #     subtitle: ""

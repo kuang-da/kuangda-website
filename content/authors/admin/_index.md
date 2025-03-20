@@ -30,7 +30,6 @@ interests:
 - Single-cell Genomics
 - Spatial proteomics
 ---
-
 ## About Me
 
 I am a final-year Ph.D. Candidate in the Department of Computer and Information Science at the University of Pennsylvania, advised by Professor [Junhyong Kim](https://www.bio.upenn.edu/people/junhyong-kim). My research focuses on deep learning and single-cell genomics, with a specific emphasis on reconstructing cell lineage trees using metric learning. Here is our [recent preprint](https://arxiv.org/abs/2503.13925) on this topic.
