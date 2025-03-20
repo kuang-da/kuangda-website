@@ -14,7 +14,7 @@ sections:
     background:
       color: black
       image:
-        filename: vintage-padding.png
+        filename: color-1-scale.png
         # filename: grey_wash_wall.webp
         parallax: false
         position: center
