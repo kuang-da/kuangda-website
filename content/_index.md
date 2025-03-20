@@ -14,10 +14,12 @@ sections:
     background:
       color: black
       image:
-        filename: color-1.jpg
+        filename: vintage-padding.png
+        # filename: grey_wash_wall.webp
         parallax: false
         position: center
         size: cover
+        # repeat: repeat
         padding: 0,0,0,0
     css_class: dark
     
