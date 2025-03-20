@@ -1,47 +1,44 @@
 ---
-bio: My research interests include distributed robotics, mobile computing and programmable
-  matter.
-education:
-  courses:
-  - course: MA in Statistics
-    institution: University of Pennsylvania, Wharton
-    year: Exp. 2022
-  - course: MSE in Computer and Information Science
-    institution: University of Pennsylvania, SEAS
-    year: 2018
-  - course: MSE in Nanotechnology
-    institution: University of Pennsylvania, SEAS
-    year: 2018
-  - course: BSc in Electronic Science
-    institution: Jilin University, ESE
-    year: 2015
-email: ""
-highlight_name: false
-interests:
-- Single-cell Genomics
-- Machine Learning
-- Information Retrieval
-organizations:
-- name: University of Pennsylvania
-  url: https://www.cis.upenn.edu/
-role: Computer Science Doctoral Student
-social:
-- display:
-    header: true
-- icon: github
-  icon_pack: fab
-  link: https://github.com/kuang-da
-- icon: linkedin
-  icon_pack: fab
-  link: https://www.linkedin.com/in/kuang-da/
+highlight_name: true
 superuser: true
 title: Da Kuang
+first_name: Da
+last_name: Kuang
+role: Computer Science Doctoral Candidate
+organizations:
+- name: University of Pennsylvania
+profiles:
+- icon: brands/linkedin
+  url: https://www.linkedin.com/in/kuang-da/
+- icon: academicons/google-scholar
+  url: https://scholar.google.com/citations?user=XsQIl3YAAAAJ&hl=en
+- icon: brands/github
+  url: https://github.com/kuang-da  
+- icon: brands/x
+  url: https://x.com/DaKuangDerek  
+education:
+- area: MA in Statistics
+  institution: University of Pennsylvania, Wharton
+- area: MSE in Computer and Information Science
+  institution: University of Pennsylvania, Engineering
+- area: MSE in Nanotechnology
+  institution: University of Pennsylvania, Engineering 
+- area: BSc in Electronic Science
+  institution: Jilin University
+interests:
+- Representation Learning
+- Single-cell Genomics
+- Spatial proteomics
 ---
 
-I am a third-year Ph.D. student in the Department of Computer and Information Science, University of Pennsylvania, advised by Professor [Junhyong Kim](https://kim.bio.upenn.edu/). My research interests center around single-cell genomics. I am currently working on robust objective optimization in biology problems. 
+## About Me
 
-I am also working on a [reading list](https://publish.obsidian.md/single-cell-papers/README) about Single-cell genomics. This list aims to help computational background students like me get familiar with the field while keeping up with the trends.
+I am a final-year Ph.D. Candidate in the Department of Computer and Information Science at the University of Pennsylvania, advised by Professor [Junhyong Kim](https://www.bio.upenn.edu/people/junhyong-kim). My research focuses on deep learning and single-cell genomics, with a specific emphasis on reconstructing cell lineage trees using metric learning. Here is our [recent preprint](https://arxiv.org/abs/2503.13925) on this topic.
 
-I am a [Tsundoku](https://en.wikipedia.org/wiki/Tsundoku) reader who tends to collect more books than I could ever finish. Here is a on-going [list of my book collection](https://www.notion.so/kuangda/e510f753fbeb4c7fab65aae19e22d073?v=f8b214cd7f584da5b7d3846f40224cae).
+I am funded by The Human BioMolecular Atlas Program ([HuBMAP](https://www.nature.com/articles/s41556-023-01194-w)) to develop [computational frameworks](https://github.com/kimpenn/aegle) for analyzing spatial proteomics and transcriptomics data across organs and donors for Female Reproductive System.
 
-I interned at IBM Chief Analytics Office as a senior data scientist in the 2021 summer.
+Beyond my primary research, I have contributed to several projects in computational biology, including: [📐](https://openreview.net/forum?id=QLydjLdcFV) Developing a robust normalization method for single-cell RNA-seq data ; [🌀](https://www.sciencedirect.com/science/article/abs/pii/S0022283622002789) Learning from an empirical kernel space for efficiently predicting protein folding; [📈](https://www.frontiersin.org/journals/drug-delivery/articles/10.3389/fddev.2024.1359700/full) Time-series analysis of cellular phototransfection responses. I am also passionate about building data science tools to facilitate collaborative research.
+
+I was fortunate to intern as a Senior Data Scientist at IBM’s Chief Analytics Office.
+
+**I am actively looking for opportunities as a Research Scientist in AI4Science at industry labs or biotech. Please feel free to reach out if you’d like to connect!**
