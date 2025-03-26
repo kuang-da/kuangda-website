@@ -40,4 +40,4 @@ Beyond my primary research, I have contributed to several projects in computatio
 
 I was fortunate to intern as a Senior Data Scientist at IBM’s Chief Analytics Office.
 
-**I am actively seeking full-time opportunities as a Research Scientist in AI4Science at industry labs or biotech. If you’re interested in connecting, feel free to reach out!**
+**I am actively seeking full-time opportunities as a Research Scientist in AI4Science across tech, biotech, or pharmaceutical industries. Feel free to reach out!**
