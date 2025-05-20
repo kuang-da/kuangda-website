@@ -1,0 +1,138 @@
+{{/* Hugo Blox: Publications */}}
+{{/* Documentation: https://hugoblox.com/blocks/ */}}
+{{/* License: https://github.com/HugoBlox/hugo-blox-builder/blob/main/LICENSE.md */}}
+
+{{/* Initialise */}}
+{{ $page := .wcPage }}
+{{ $block := .wcBlock }}
+
+{{/* Query */}}
+{{ $query := where site.RegularPages "Type" "publication" }}
+
+{{/* Sort */}}
+{{ $sort_by := $block.content.sort_by | default "Date" }}
+{{ $sort_ascending := $block.content.sort_ascending | default false }}
+{{ $sort_order := cond $sort_ascending "asc" "desc" }}
+{{ $query = sort $query $sort_by $sort_order }}
+
+{{/* Limit */}}
+{{ $count := $block.content.count | default 5 }}
+{{ if gt $count 0 }}
+  {{ $query = first $count $query }}
+{{ end }}
+
+<div class="flex flex-col items-center max-w-6xl mx-auto gap-8 px-6">
+  {{/* Section Title */}}
+  {{ if $block.content.title }}
+  <div class="w-full">
+    <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-6">
+      {{ $block.content.title | emojify | $page.RenderString }}
+    </h2>
+  </div>
+  {{ end }}
+
+  {{/* Publications List */}}
+  <div class="w-full space-y-12">
+    {{ range $query }}
+    {{ $publication := . }}
+    <div class="flex flex-col md:flex-row gap-6">
+        {{/* Thumbnail */}}
+        <div class="w-40 md:w-48 flex-shrink-0">
+          {{ $image_path := .Params.image.filename | default "featured_0.jpg"}}
+          {{ warnf "======= Image path: %s" $image_path }}
+          {{ with $image_path }}
+            {{ $img_src := $publication.Resources.GetMatch $image_path }}
+            {{ warnf "======= Image src: %s" $img_src }}
+            {{ if $img_src }}
+              <img src="{{ $img_src.RelPermalink }}" alt="{{ $.Title }}" class="w-full rounded border border-gray-200 dark:border-gray-700">
+            {{ else }}
+              <div class="bg-gray-100 dark:bg-gray-800 aspect-[4/3] rounded border border-gray-200 dark:border-gray-700 flex items-center justify-center">
+                <span class="text-gray-400 dark:text-gray-500">No Image</span>
+              </div>
+            {{ end }}
+          {{ else }}
+            <div class="bg-gray-100 dark:bg-gray-800 aspect-[4/3] rounded border border-gray-200 dark:border-gray-700 flex items-center justify-center">
+              <span class="text-gray-400 dark:text-gray-500">No Image</span>
+            </div>
+          {{ end }}
+        </div>
+      {{/* Content */}}
+      <div class="flex-grow">
+        {{/* Title */}}
+        <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">
+          <a href="{{ .RelPermalink }}" class="hover:underline">{{ .Title }}</a>
+        </h3>
+
+        {{/* Authors */}}
+        <div class="text-gray-700 dark:text-gray-300 mb-2">
+          {{ $authors := .Params.authors }}
+          {{ range $index, $author := $authors }}
+            {{ if $index }}, {{ end }}
+            {{ if eq $author $block.content.highlight_author }}
+              <strong class="font-medium">{{ $author }}</strong>
+            {{ else }}
+              {{ $author }}
+            {{ end }}
+          {{ end }}
+        </div>
+
+        {{/* Venue, Date, etc. */}}
+        <div class="text-gray-700 dark:text-gray-300 mb-3">
+          {{ with .Params.publication }}{{ . }}{{ end }}
+          {{ with .Params.publication_types }}
+            {{ $pub_type := index . 0 }}
+            {{ if eq $pub_type "1" }}(Conference){{ end }}
+            {{ if eq $pub_type "2" }}(Journal){{ end }}
+          {{ end }}
+          {{ if .Params.date }}
+            , {{ time.Format "Jan 2006" .Date }}
+          {{ end }}
+        </div>
+
+        {{/* Links */}}
+        <div class="flex flex-wrap gap-2">
+          {{ with .Params.url_pdf }}
+          <a href="{{ . }}" class="inline-block px-3 py-1 bg-green-500 text-white text-sm font-medium rounded hover:bg-green-600">PDF</a>
+          {{ end }}
+          
+          {{ with .Params.url_preprint }}
+          <a href="{{ . }}" class="inline-block px-3 py-1 bg-purple-500 text-white text-sm font-medium rounded hover:bg-purple-600">Abstract</a>
+          {{ end }}
+          
+          {{ with .Params.url_code }}
+          <a href="{{ . }}" class="inline-block px-3 py-1 bg-blue-500 text-white text-sm font-medium rounded hover:bg-blue-600">Code</a>
+          {{ end }}
+          
+          {{ with .Params.url_dataset }}
+          <a href="{{ . }}" class="inline-block px-3 py-1 bg-yellow-500 text-white text-sm font-medium rounded hover:bg-yellow-600">Dataset</a>
+          {{ end }}
+          
+          {{ with .Params.url_project }}
+          <a href="{{ . }}" class="inline-block px-3 py-1 bg-orange-500 text-white text-sm font-medium rounded hover:bg-orange-600">Project</a>
+          {{ end }}
+          
+          {{ with .Params.url_slides }}
+          <a href="{{ . }}" class="inline-block px-3 py-1 bg-indigo-500 text-white text-sm font-medium rounded hover:bg-indigo-600">Slides</a>
+          {{ end }}
+          
+          {{ with .Params.url_video }}
+          <a href="{{ . }}" class="inline-block px-3 py-1 bg-red-500 text-white text-sm font-medium rounded hover:bg-red-600">Video</a>
+          {{ end }}
+          
+          {{ with .Params.url_poster }}
+          <a href="{{ . }}" class="inline-block px-3 py-1 bg-pink-500 text-white text-sm font-medium rounded hover:bg-pink-600">Poster</a>
+          {{ end }}
+          
+          {{ with .Params.url_source }}
+          <a href="{{ . }}" class="inline-block px-3 py-1 bg-gray-500 text-white text-sm font-medium rounded hover:bg-gray-600">Source</a>
+          {{ end }}
+          
+          {{ with .Params.url_bibtex }}
+          <a href="{{ . }}" class="inline-block px-3 py-1 bg-red-600 text-white text-sm font-medium rounded hover:bg-red-700">Bibtex</a>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</div> 

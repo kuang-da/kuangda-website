@@ -1,5 +1,5 @@
 ---
-date: "2022-10-24"
+date: "2025-05-11"
 design:
   spacing: 0
 sections:
@@ -22,7 +22,20 @@ sections:
         # repeat: repeat
         padding: 0,0,0,0
     css_class: dark
-    
+- block: publications
+  content:
+    title: 📚 Selected Publications
+    count: 10
+    highlight_author: Xikun Zhang
+    sort_by: Date
+    sort_ascending: false
+    text: "These are my most important research contributions."
+  design:
+    spacing:
+      padding: ["2rem", 0, "2rem", 0]
+    css_class: "my-publications-section"
+    columns: "1"
+  id: publications    
 # - block: markdown
 #   content:
 #     subtitle: ""
@@ -34,6 +47,20 @@ sections:
 #     title: "\U0001F4DA My Research"
 #   design:
 #     columns: "1"
+- block: markdown
+  content:
+    subtitle: ""
+    text: "
+- Reviewer: ICML 2025, ICLR 2025, AISTAT 2025, NeurIPS 2024\n
+- Workshop Reviewer: ICLR-25 FM-Wild, MLGenX; NeurIPS-24 FM4Science, AIDrugX; NeurIPS-23 AI4Science\n
+- Head TA for Operating Systems (CIT 595) with MCIT Online TA Awards, University of Pennsylvania\n
+- Mentored undergraduate researchers on projects in biomedical imaging, multi-omics analysis, and protein function prediction\n
+- Course designer for CIT 595, STAT 471, and STAT 961
+"
+    title: "🏛️ Academic Services"
+  design:
+    columns: "1"    
+
 # - block: collection
 #   content:
 #     filters:

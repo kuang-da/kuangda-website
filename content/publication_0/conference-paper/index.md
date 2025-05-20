@@ -12,41 +12,43 @@ author_notes:
 authors:
 - admin
 - Robert Ford
-date: "2015-09-01T00:00:00Z"
+date: "2013-07-01T00:00:00Z"
 doi: ""
-featured: false
-image:
-  caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/jdD8gXaTZsc)'
+featured: true
+image: 
+  caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/pLCdAaMFLTE)'
   focal_point: ""
   preview_only: false
-projects: []
-publication: '*Journal of Source Themes, 1*(1)'
-publication_short: ""
+  filename: "featured.jpg"
+projects:
+- example
+publication: In *Hugo Blox Builder Conference*
+publication_short: In *ICW*
 publication_types:
-- article-journal
+- paper-conference
 publishDate: "2017-01-01T00:00:00Z"
 slides: example
 summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus
   ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
 tags:
-- Source Themes
-title: An example journal article
+- Large Language Models
+title: An example conference paper
 url_code: https://github.com/HugoBlox/hugo-blox-builder
-url_dataset: ""
-url_pdf: http://arxiv.org/pdf/1512.04133v1
+url_dataset: https://github.com/HugoBlox/hugo-blox-builder
+url_pdf: ""
 url_poster: ""
 url_project: ""
 url_slides: ""
-url_source: ""
-url_video: ""
+url_source: https://github.com/HugoBlox/hugo-blox-builder
+url_video: https://youtube.com
 ---
 
 {{% callout note %}}
-Click the *Cite* button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+Click the _Cite_ button above to demo the feature to enable visitors to import publication metadata into their reference management software.
 {{% /callout %}}
 
 {{% callout note %}}
-Create your slides in Markdown - click the *Slides* button to check out the example.
+Create your slides in Markdown - click the _Slides_ button to check out the example.
 {{% /callout %}}
 
 Add the publication's **full text** or **supplementary notes** here. You can use rich formatting such as including [code, math, and images](https://docs.hugoblox.com/content/writing-markdown-latex/).

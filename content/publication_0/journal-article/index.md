@@ -6,42 +6,45 @@ abstract: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere 
   egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id
   dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus.
   Vestibulum sit amet erat at nulla eleifend gravida.
+author_notes:
+- Equal contribution
+- Equal contribution
 authors:
 - admin
-date: "2019-04-07T00:00:00Z"
+- Robert Ford
+date: "2015-09-01T00:00:00Z"
 doi: ""
-featured: true
+featured: false
 image:
-  caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/s9CC2SKySJM)'
+  caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/jdD8gXaTZsc)'
   focal_point: ""
   preview_only: false
-links:
-- name: Custom Link
-  url: http://example.org
-projects:
-- internal-project
-publication: ""
+  filename: "featured.jpg"
+projects: []
+publication: '*Journal of Source Themes, 1*(1)'
 publication_short: ""
 publication_types:
-- article
+- article-journal
 publishDate: "2017-01-01T00:00:00Z"
 slides: example
 summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus
   ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
 tags:
-- Large Language Models
-title: An example preprint / working paper
+- Source Themes
+title: An example journal article
 url_code: https://github.com/HugoBlox/hugo-blox-builder
-url_dataset: '#'
+url_dataset: ""
 url_pdf: http://arxiv.org/pdf/1512.04133v1
-url_poster: '#'
+url_poster: ""
 url_project: ""
 url_slides: ""
-url_source: '#'
-url_video: '#'
+url_source: ""
+url_video: ""
 ---
 
-This work is driven by the results in my [previous paper](/publication/conference-paper/) on LLMs.
+{{% callout note %}}
+Click the *Cite* button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+{{% /callout %}}
 
 {{% callout note %}}
 Create your slides in Markdown - click the *Slides* button to check out the example.
